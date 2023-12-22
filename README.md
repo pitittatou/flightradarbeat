@@ -1,38 +1,20 @@
-# {Beat}
+# Flightradarbeat
 
-Welcome to {Beat}.
+Welcome to Flightradarbeat.
 
 Ensure that this folder is at the following location:
 `${GOPATH}/src/github.com/pitittatou/flightradarbeat`
 
-## Getting Started with {Beat}
+## Getting Started with Flightradarbeat
 
 ### Requirements
 
 * [Golang](https://golang.org/dl/) 1.7
 
-### Init Project
-To get running with {Beat} and also install the
-dependencies, run the following command:
-
-```
-make setup
-```
-
-It will create a clean git history for each major step. Note that you can always rewrite the history if you wish before pushing your changes.
-
-To push {Beat} in the git repository, run the following commands:
-
-```
-git remote set-url origin https://github.com/pitittatou/flightradarbeat
-git push origin master
-```
-
-For further development, check out the [beat developer guide](https://www.elastic.co/guide/en/beats/libbeat/current/new-beat.html).
 
 ### Build
 
-To build the binary for {Beat} run the command below. This will generate a binary
+To build the binary for Flightradarbeat run the command below. This will generate a binary
 in the same directory with the name flightradarbeat.
 
 ```
@@ -42,30 +24,12 @@ make
 
 ### Run
 
-To run {Beat} with debugging output enabled, run:
+To run Flightradarbeat with debugging output enabled, run:
 
 ```
 ./flightradarbeat -c flightradarbeat.yml -e -d "*"
 ```
 
-
-### Test
-
-To test {Beat}, run the following command:
-
-```
-make testsuite
-```
-
-alternatively:
-```
-make unit-tests
-make system-tests
-make integration-tests
-make coverage-report
-```
-
-The test coverage is reported in the folder `./build/coverage/`
 
 ### Update
 
@@ -79,12 +43,6 @@ make update
 
 ### Cleanup
 
-To clean  {Beat} source code, run the following command:
-
-```
-make fmt
-```
-
 To clean up the build directory and generated artifacts, run:
 
 ```
@@ -94,7 +52,7 @@ make clean
 
 ### Clone
 
-To clone {Beat} from the git repository, run the following commands:
+To clone Flightradarbeat from the git repository, run the following commands:
 
 ```
 mkdir -p ${GOPATH}/src/github.com/pitittatou/flightradarbeat
