@@ -1,0 +1,19 @@
+############################ Flightradarbeat ###################################
+
+flightradarbeat:
+  period: 5s
+
+# ================================== Outputs ===================================
+
+# ---------------------------- File Output ----------------------------
+output.file:
+  path: "/tmp/flightradarbeat"
+  filename: out
+  number_of_files: 1023
+  rotate-every-kb: 102400 # New file created every 100 MB
+
+# ================================ Processors ==================================
+
+processors:
+  - drop_fields:
+      fields: ["beat"]

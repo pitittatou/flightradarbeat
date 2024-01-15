@@ -1,0 +1,8 @@
+/.idea
+/build
+/logs
+
+.DS_Store
+/flightradarbeat
+/flightradarbeat.test
+*.pyc
